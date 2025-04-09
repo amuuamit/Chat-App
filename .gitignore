@@ -1,16 +1,10 @@
-# Node.js dependencies
+
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .env
-package-lock.json
 yarn.lock
-
-# Logs
-logs/
-*.log
-*.log.*
 
 # Environment variables
 .env
@@ -20,7 +14,6 @@ dist/
 build/
 node_modules
 .env
-package-lock.json
 
 
 # Cache

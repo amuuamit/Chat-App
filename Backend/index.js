@@ -20,7 +20,7 @@ const server = http.createServer(app);
 // Configure CORS
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://chat-app-50zj.onrender.com",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -35,7 +35,7 @@ app.use(cookieParser());
 // Configure Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://chat-app-50zj.onrender.com",
     methods: ["GET", "POST"],
     credentials: true,
   },

@@ -13,7 +13,7 @@ const server = http.createServer(app);
 // Configure CORS for Express
 app.use(
   cors({
-    origin: "https://chat-app-50zj.onrender.com",
+    origin: "https://chat-app-5-ttcs.onrender.com",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -30,7 +30,7 @@ app.use(express.urlencoded({ extended: true }));
 // Configure Socket.IO with CORS
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-app-50zj.onrender.com",
+    origin: "https://chat-app-5-ttcs.onrender.com",
     methods: ["GET", "POST"],
     credentials: true,
   },

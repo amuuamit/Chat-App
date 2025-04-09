@@ -9,7 +9,7 @@ import { SocketProvider } from "./context/socketContext.jsx";
 
 // Server URL configuration
 export const server =
-  import.meta.env.VITE_SERVER_URL || "https://chat-app-50zj.onrender.com";
+  import.meta.env.VITE_SERVER_URL || "https://chat-app-5-ttcs.onrender.com";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>

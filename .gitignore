@@ -18,6 +18,10 @@ logs/
 # Build output
 dist/
 build/
+node_modules
+.env
+package-lock.json
+
 
 # Cache
 .cache/

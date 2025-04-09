@@ -9,9 +9,10 @@ import chatRoutes from "./route/chat.route.js";
 import messageRoutes from "./route/message.route.js";
 import mongoose from "mongoose";
 import path from "path";
-import { fileURLToPath } from "url";
 
 dotenv.config();
+
+const __dirname = path.resolve();
 
 const app = express();
 const server = http.createServer(app);
@@ -70,6 +71,12 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 5000;
 const URI = process.env.MONGODB_URI;
+
+// __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, "/Frontend/dist")));
+app.get("/", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "Frontend", "dist", "index.html"));
+});
 
 mongoose
   .connect(URI)

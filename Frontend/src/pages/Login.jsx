@@ -26,7 +26,7 @@ const Login = () => {
     setError("");
 
     try {
-      console.log("Attempting login...");
+      // console.log("Attempting login...");
       const response = await axios.post(`${server}/user/login`, formdata, {
         headers: {
           "Content-Type": "application/json",
@@ -37,8 +37,8 @@ const Login = () => {
 
       if (response.status === 200 || response.status === 201) {
         const { user, token } = response.data;
-        console.log("User data:", user);
-        console.log("Token:", token);
+        // console.log("User data:", user);
+        // console.log("Token:", token);
 
         const authData = {
           ...user,

@@ -4,12 +4,12 @@ Welcome to **What's Chat**, a real-time chat application where users can connect
 
 ---
 
+Deployed project link : [What's-Chat](https://chat-app-5-ttcs.onrender.com)
+
 ## Features
 
 - **User Authentication**: Secure login and signup functionality.
 - **Real-Time Messaging**: Send and receive messages instantly.
-- **Group Chats**: Create and manage group chats.
-- **User Profiles**: View and edit user profiles.
 - **Responsive Design**: Fully responsive UI for all devices.
 - **Error Handling**: Friendly error messages and retry options.
 
@@ -47,7 +47,7 @@ Welcome to **What's Chat**, a real-time chat application where users can connect
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/chat-app.git
+   git clone https://github.com/amuuamit/Chat-App.git
    cd chat-app
    ```
 
@@ -59,8 +59,8 @@ Welcome to **What's Chat**, a real-time chat application where users can connect
    │   ├── controllers/
    │   ├── models/
    │   ├── routes/
-   │   ├── server.js
-   │   └── .env
+   │   ├── index.js
+   │
    ├── Frontend/
    │   ├── src/
    │   │   ├── components/
@@ -69,7 +69,6 @@ Welcome to **What's Chat**, a real-time chat application where users can connect
    │   │   ├── App.jsx
    │   │   └── main.jsx
    │   └── public/
-   ├── [README.md](http://_vscodecontentref_/1)
    ```
 
 3. Set up environment variables:
@@ -93,13 +92,11 @@ Welcome to **What's Chat**, a real-time chat application where users can connect
    npm run dev
    ```
 
-
 React
 Node.js
 MongoDB
 Socket.IO
 Tailwind CSS
-
 
 Contact
 For any inquiries or feedback, please contact:

@@ -11,7 +11,8 @@ import { SocketProvider } from "./context/socketContext.jsx";
 export const server =
   import.meta.env.VITE_SERVER_URL ||
   "http://localhost:5002" ||
-  "http://localhost:5173";
+  "http://localhost:5173" ||
+  "https://chat-app-1-2jsj.onrender.com";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>

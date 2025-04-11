@@ -76,7 +76,7 @@ const ChatPage = () => {
   }, [authUser, navigate, chatId, setSelectedChat]);
 
   const handleUserSelect = async (user) => {
-    user.preventDefault();
+    // user.preventDefault();
     try {
       setLoading(true);
       const { data } = await axios.post(

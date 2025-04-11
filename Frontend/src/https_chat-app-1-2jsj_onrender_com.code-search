@@ -1,0 +1,39 @@
+# Query: https://chat-app-1-2jsj.onrender.com
+# Flags: CaseSensitive OpenEditors
+# ContextLines: 1
+
+8 results - 5 files
+
+Backend/index.js:
+  22    cors({
+  23:     origin: "http://localhost:5002",
+  24      credentials: true,
+
+  37    cors: {
+  38:     origin: "http://localhost:5002",
+  39      methods: ["GET", "POST"],
+
+Backend/socketIO/server.js:
+  15    cors({
+  16:     origin: "http://localhost:5002",
+  17      credentials: true,
+
+  32    cors: {
+  33:     origin: "http://localhost:5002",
+  34      methods: ["GET", "POST"],
+
+Frontend/.env:
+  4  
+  5: # http://localhost:5002
+  6  
+
+Frontend/environment.js:
+  2  const server = IS_PROD
+  3:   ? "http://localhost:5002"
+  4:   : "http://localhost:5002";
+  5  
+
+Frontend/src/main.jsx:
+  11  export const server =
+  12:   import.meta.env.VITE_SERVER_URL || "http://localhost:5002";
+  13  

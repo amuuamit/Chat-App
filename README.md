@@ -4,7 +4,7 @@ Welcome to **What's Chat**, a real-time chat application where users can connect
 
 ---
 
-Deployed project link : [What's-Chat](https://chat-app-5-ttcs.onrender.com)
+Deployed project link : [What's-Chat](https://chat-app-1-2jsj.onrender.com)
 
 ## Features
 

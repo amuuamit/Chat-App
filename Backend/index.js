@@ -20,7 +20,7 @@ const server = http.createServer(app);
 // Configure CORS
 app.use(
   cors({
-    origin: "https://chat-app-5-ttcs.onrender.com",
+    origin: ["http://localhost:5002", "http://localhost:5173"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -35,7 +35,7 @@ app.use(cookieParser());
 // Configure Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-app-5-ttcs.onrender.com",
+    origin: ["http://localhost:5002", "http://localhost:5173"],
     methods: ["GET", "POST"],
     credentials: true,
   },

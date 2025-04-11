@@ -6,6 +6,7 @@ import { BsEmojiSmile } from "react-icons/bs";
 import EmojiPicker from "emoji-picker-react";
 import axios from "axios";
 import { server } from "../main.jsx";
+// import server from "../../environment.js";
 import { toast } from "react-hot-toast";
 import { useChat } from "../context/chatProvider";
 import { useNavigate } from "react-router-dom";
@@ -306,7 +307,11 @@ const ChatArea = () => {
       </div>
 
       {/* Messages Area */}
-      <div className="flex-1 overflow-y-auto p-2 sm:p-4 w-full bg-gray-950">
+      <div
+        className="flex-1 overflow-y-auto p-2 sm:p-4 w-full bg-cover bg-center"
+        style={{ backgroundImage: "url('/backChat.jpg')" }}
+      >
+        {" "}
         {messages.map((message) => (
           <div
             key={message._id}
@@ -319,7 +324,7 @@ const ChatArea = () => {
             <div
               className={`max-w-[85%] sm:max-w-[70%] px-3 sm:px-4 py-2 rounded-lg ${
                 message.sender._id === authUser._id
-                  ? "bg-blue-500 text-white"
+                  ? "bg-black text-white"
                   : "bg-gray-200 text-gray-800"
               }`}
             >

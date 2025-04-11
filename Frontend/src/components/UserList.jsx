@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useAuth } from "../context/authProvider.jsx";
 import axios from "axios";
-import { server } from "../main.jsx";
+import server from "../../environment.js";
 import { toast } from "react-hot-toast";
 
 const UserList = ({ onUserSelect }) => {

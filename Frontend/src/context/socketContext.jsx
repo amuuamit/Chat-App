@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { io } from "socket.io-client";
-import { server } from "../main.jsx";
-
+import server from "../../environment";
 const SocketContext = createContext();
 
 export const useSocket = () => {

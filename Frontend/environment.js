@@ -1,7 +1,7 @@
 let IS_PROD = true;
 const server = IS_PROD
-  ? "http://localhost:5002"
-  : "https://chat-app-1-2jsj.onrender.com";
+  ? "https://chat-app-1-2jsj.onrender.com"
+  : "http://localhost:5002";
 
 export default server;
 

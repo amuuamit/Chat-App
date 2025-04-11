@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { useAuth } from "./authProvider.jsx";
 import axios from "axios";
-import { server } from "../main.jsx";
+import server from "../../environment.js";
 import { toast } from "react-hot-toast";
 
 const ChatContext = createContext();

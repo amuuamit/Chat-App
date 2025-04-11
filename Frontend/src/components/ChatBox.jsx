@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useAuth } from "../context/authProvider.jsx";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { server } from "../main.jsx";
+import server from "../../environment.js";
 import { toast } from "react-hot-toast";
 import { IoMdSend } from "react-icons/io";
 import { BsEmojiSmile } from "react-icons/bs";
